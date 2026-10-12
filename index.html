@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9e9">
+  <meta name="description" content="Un lugar alegre para aprender jugando: cursos y retos para pequeños exploradores.">
+  <title>Chispa — aprender jugando</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/courses.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Chispa, ir al inicio"><span class="brand-mark" aria-hidden="true">✦</span><span>chispa<span class="brand-dot">.</span></span></a>
+    <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#cursos">Mis aventuras</a><a href="#profes">Para profes</a></nav>
+    <div class="top-actions"><button class="sound-toggle" id="motion-toggle" type="button" aria-pressed="false" title="Activar o pausar animaciones">✨ <span>Chispa</span></button></div>
+  </header>
+  <main id="main">
+    <div id="home-view">
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><span class="eyebrow"><span class="live-dot"></span> Un mundo para descubrir</span><h1>¡Hola, pequeño<br><span>explorador!</span></h1><p>¿Listo para aprender algo nuevo? Aquí cada pregunta es una aventura y cada intento te hace crecer.</p><a class="button button-primary" href="#cursos">¡Empezar a aprender! <span aria-hidden="true">→</span></a><div class="hero-note">☀️ <span>Aprende a tu ritmo. ¡Tú puedes!</span></div></div>
+      <div class="hero-art" aria-label="Una amigable luciérnaga te acompaña a aprender" role="img"><span class="sun">☀️</span><span class="cloud cloud-one">☁️</span><span class="cloud cloud-two">☁️</span><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="firefly"><span class="feelers">⌒⌒</span><span class="face">•ᴗ•</span><span class="wings">◡</span></div><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span><span class="art-caption">¡Tu aventura comienza aquí!</span></div>
+    </section>
+    <section class="courses-section section-wrap" id="cursos"><div class="section-heading"><div><span class="eyebrow">ELIGE TU CAMINO</span><h2>¿Qué quieres aprender hoy?</h2><p>Aventuras para descubrir, practicar y aprender con seguridad.</p></div><span class="section-doodle" aria-hidden="true">✿</span></div><div id="course-grid" class="course-grid"></div></section>
+    <section class="teacher-section" id="profes"><div class="teacher-inner"><div class="teacher-badge" aria-hidden="true">📚</div><div class="teacher-copy"><span class="eyebrow">UN ESPACIO PARA ACOMPAÑAR</span><h2>¡Hola, profes y familias!</h2><p>Ideas sencillas para convertir cada aventura en una experiencia compartida en clase o en casa.</p></div><button class="button button-light" id="teacher-button" type="button">Ver guía docente <span aria-hidden="true">→</span></button></div></section>
+    </div>
+    <section id="learning" class="learning-section section-wrap" hidden></section>
+    <section id="teacher-panel" class="teacher-panel section-wrap" hidden></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✦</span><span>chispa<span class="brand-dot">.</span></span></a><p>Hecho para aprender, jugar y volver a intentar. 💛</p><span>El avance solo dura mientras esta página está abierta.</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
